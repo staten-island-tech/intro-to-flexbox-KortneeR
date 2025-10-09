@@ -17,6 +17,11 @@ html, body {
     justify-content: center;
 }
 
+.logo{
+  width:"800"
+  height:"500"
+}
+
 .title {
     font-family: 'Lexend', sans-serif;
     text-align: center;

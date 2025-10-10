@@ -23,16 +23,16 @@ const alnst =[
         {
         name:"bunny keychain",
         price:7.00,
-        inStock:false
+        inStock:false,
         class:"idk",
         img:"img/bunny keychain.webp"
     },
         {
-        name:
-        price:
-        inStock:
-        class:
-        img:
+        name:"bunny mug",
+        price:42.00,
+        inStock:true,
+        class:"idk",
+        img:"img/bunny mug.webp"
     },
         {
         name:

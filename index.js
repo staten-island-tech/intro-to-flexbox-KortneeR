@@ -1,4 +1,4 @@
-const alnst =[
+const products =[
     {
         name: "bunny can",
         price: 4.00,
@@ -148,9 +148,3 @@ const alnst =[
     },
 ]
 
-function inject(item){
-const container = document.querySelector(".container")
-container.insertAdjacentHTML{"afterbegin", `<h3></h3>${something}</h3>`};
-}
-
-inject(alnst[0]);

@@ -11,15 +11,15 @@ html, body {
   color: rgb(255, 255, 255);}
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
-.section {
+.container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
 .logo{
-  width:"800"
-  height:"500"
+  width:"800";
+  height: "500";
 }
 
 .title {
@@ -29,7 +29,7 @@ html, body {
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
-.container {
+.card {
     background-color: rgb(135, 203, 230);
     border: 5px solid rgb(103, 159, 233);
     border-radius: 40px;

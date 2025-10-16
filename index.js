@@ -125,6 +125,5 @@ const products =[
         img: "cardbook.webp",
         alt: "Card Collection Book"
     }, 
+];
 
-
-]

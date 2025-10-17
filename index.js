@@ -127,3 +127,16 @@ const products =[
     }, 
 ];
 
+function inject(product) {
+document.querySelector('.container').insertAdjacentHTML(
+    "afterbegin",
+    `<div class="card">
+    <h3>${product.name}</h3>
+    <h5>${product.category}</h5>
+    <img src=${product.img}/>
+    <h4>${product.price}</h4>
+    <button
+    </div>`
+  );
+}
+inject(products[0])

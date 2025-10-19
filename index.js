@@ -125,18 +125,46 @@ const products =[
         img: "cardbook.webp",
         alt: "Card Collection Book"
     }, 
+        {
+        name: "Anakt Garden Kit",
+        price: 28.00,
+        category: "Rabbit Series 1",
+        img: "yaybook.webp",
+        alt: "Anakt Garden Kit"
+    }, 
+        {
+        name: "Album Vol.1",
+        price: 37.00,
+        category: "Rabbit Series 1",
+        img: "alnstalbum.webp",
+        alt: "Album Vol.1"
+    }, 
 ];
 
+const cart = []
+
 function inject(product) {
+    console.log(product.img);
 document.querySelector('.container').insertAdjacentHTML(
     "afterbegin",
-    `<div class="card">
+    `<div class="card"> 
     <h3>${product.name}</h3>
     <h5>${product.category}</h5>
-    <img src=${product.img}/>
+\
     <h4>${product.price}</h4>
-    <button
+    <button class="buybutton" "data-title="${products.indexOf(product)}">Add to Cart</button>
     </div>`
   );
 }
-inject(products[0])
+
+products.forEach(inject);
+
+const buttons = document.querySelectorAll;(".buybutton");
+buttons.forEach((button) => {
+    button.addEventListener('click',(button) => {
+    let buttontitle = button.getAttribute("data-title") 
+    let product = products[buttontitle]
+    } )
+})
+
+

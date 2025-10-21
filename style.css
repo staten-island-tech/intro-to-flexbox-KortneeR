@@ -18,8 +18,9 @@ html, body {
 }
 
 .logo{
-  width:"800";
-  height: "500";
+  width: 800px;
+  height: 500px;
+  
 }
 
 .title {
@@ -49,10 +50,8 @@ html, body {
   font-weight: bold;
 }
 
-img {
-  margin: 10px auto;
-  display:block;
-  
+.image{
+  width: 350px
 }
 
 .buybutton {

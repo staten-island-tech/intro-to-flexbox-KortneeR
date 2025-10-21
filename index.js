@@ -150,8 +150,8 @@ document.querySelector('.container').insertAdjacentHTML(
     `<div class="card"> 
     <h3>${product.name}</h3>
     <h5>${product.category}</h5>
-\
-    <h4>${product.price}</h4>
+    <img src = ${product.img} class = "image">
+    <h4>$${product.price}</h4>
     <button class="buybutton" "data-title="${products.indexOf(product)}">Add to Cart</button>
     </div>`
   );

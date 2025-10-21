@@ -21,3 +21,17 @@
 // }
 
 // inject(product[0]);so 
+
+
+//this for the test or something i dunno waaaaaa
+// const numbers = [1,2,3,4,5];
+// let x = 0;
+// while (x <11) {
+//     if (numbers,incudes(3)) {
+//     console.log("found")
+//     } else {
+//     numbers.push(x);
+//     }
+// x++;
+//     } 
+// console.log(numbers);

@@ -160,13 +160,16 @@ document.querySelector('.container').insertAdjacentHTML(
 products.forEach(inject);
 
 function addtocart() {
-const buttons = document.querySelectorAll;(".buybutton");
+const buttons = document.querySelectorAll("button");
 buttons.forEach((button) => {
-    button.addEventListener('click',(button) => {
+    button.addEventListener('click',(event) => {
+        let productTitle = event.target.closest(".card").querySelector("h3").textContent; 
+        let productPrice = event.target.closest(".card").querySelector("h4").textContent;
+        console.log(productTitle, productPrice) 
+        //insertAdjacentHTML copy inject func
     } )
-    let buttontitle = button.getAttribute("data-title") 
-    let product = products[buttontitle]
+    
 })
 }
 
-
+addtocart()

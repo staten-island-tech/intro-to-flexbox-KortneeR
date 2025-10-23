@@ -35,3 +35,18 @@
 // x++;
 //     } 
 // console.log(numbers);
+
+// // number in cart
+// let prod = {
+//     title: "Cooking with Fire",
+//     author: "Grace Turner",
+//     genre: "Non-Fiction",
+//     year: 2026,
+// }
+// const cart = []
+// function checCart (prod){
+//     const found = cart.find((cardItem) => cardItem.title === prod.title);
+//     if(found){
+//         found.quantity +=1;
+//     }
+}

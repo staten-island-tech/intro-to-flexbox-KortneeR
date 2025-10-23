@@ -159,12 +159,14 @@ document.querySelector('.container').insertAdjacentHTML(
 
 products.forEach(inject);
 
+function addtocart() {
 const buttons = document.querySelectorAll;(".buybutton");
 buttons.forEach((button) => {
     button.addEventListener('click',(button) => {
+    } )
     let buttontitle = button.getAttribute("data-title") 
     let product = products[buttontitle]
-    } )
 })
+}
 
 

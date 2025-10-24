@@ -54,7 +54,7 @@ html, body {
   width: 350px
 }
 
-.buybutton {
+.button {
   background-color: rgb(7, 7, 46);
   border: none;
   color: white;
@@ -70,7 +70,7 @@ html, body {
  
 }
 
-.buybutton:hover {
+.button:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(7, 7, 46);
   color:rgb(135, 201, 255);

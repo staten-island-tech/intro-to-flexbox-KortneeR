@@ -152,7 +152,7 @@ document.querySelector('.container').insertAdjacentHTML(
     <h5>${product.category}</h5>
     <img src = ${product.img} class = "image">
     <h4>$${product.price}</h4>
-    <button class="buybutton" "data-title="${products.indexOf(product)}">Add to Cart</button>
+    <button class="button" "data-title="${products.indexOf(product)}">Add to Cart</button>
     </div>`
   );
 }
@@ -167,9 +167,17 @@ buttons.forEach((button) => {
         let productPrice = event.target.closest(".card").querySelector("h4").textContent;
         console.log(productTitle, productPrice) 
         //insertAdjacentHTML copy inject func
+        document.querySelector('.cart').insertAdjacentHTML(
+        "afterbegin",
+        `<div class="card">
+        <h4>${productTitle}</h4> 
+        <h4>${productPrice}</h4>
+        </div>`
+);
     } )
-    
 })
 }
 
+
 addtocart()
+cart()

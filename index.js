@@ -141,8 +141,6 @@ const products =[
     }, 
 ];
 
-const cart = []
-
 function inject(product) {
     console.log(product.img);
 document.querySelector('.container').insertAdjacentHTML(
@@ -178,6 +176,11 @@ buttons.forEach((button) => {
 })
 }
 
-
 addtocart()
 cart()
+
+//somehow make this appear idk send help and kill me
+const cart = []
+let cartTotal = 0;
+cart.forEach((product) => (cardTotal = cartTotal + product));
+console.log(cartTotal);

@@ -156,6 +156,7 @@ document.querySelector('.container').insertAdjacentHTML(
 }
 
 products.forEach(inject);
+let cartTotal = 0;
 
 function addtocart() {
 const buttons = document.querySelectorAll("button");
@@ -164,7 +165,6 @@ buttons.forEach((button) => {
         let productTitle = event.target.closest(".card").querySelector("h3").textContent; 
         let productPrice = event.target.closest(".card").querySelector("h4").textContent;
         console.log(productTitle, productPrice) 
-        //insertAdjacentHTML copy inject func
         document.querySelector('.cart').insertAdjacentHTML(
         "afterbegin",
         `<div class="card">
@@ -172,15 +172,18 @@ buttons.forEach((button) => {
         <h4>${productPrice}</h4>
         </div>`
 );
+        cartTotal = cartTotal + Number(productPrice.slice(1));
+        console.log(cartTotal);
     } )
 })
+
+
 }
 
 addtocart()
 cart()
 
-//somehow make this appear idk send help and kill me
 const cart = []
-let cartTotal = 0;
-cart.forEach((product) => (cardTotal = cartTotal + product));
-console.log(cartTotal);
+// let cartTotal = 0;
+// cart.forEach((product) => (cartTotal = cartTotal + product));
+// console.log(cartTotal);

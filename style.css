@@ -83,11 +83,19 @@ html, body {
   font-family: 'Lexend', sans-serif;
 }
 
-.cart-title{
+.cartTitle{
   border: 2px solid rgb(103, 159, 233);
   background-color: rgb(135, 203, 230);
   border-radius: 12px;
   font-family: 'Lexend', sans-serif;
   font-size: 32px;
 
+}
+
+.cartTotal{
+  border: 2px solid rgb(103, 159, 233);
+  background-color: rgb(135, 203, 230);
+  border-radius: 12px;
+  font-family: 'Lexend', sans-serif;
+  font-size: 20px;
 }

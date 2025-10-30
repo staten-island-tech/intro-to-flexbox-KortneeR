@@ -141,6 +141,10 @@ const products =[
     }, 
 ];
 
+function filter(){
+    
+}
+
 function inject(product) {
     console.log(product.img);
 document.querySelector('.container').insertAdjacentHTML(
@@ -171,9 +175,13 @@ buttons.forEach((button) => {
         <h4>${productTitle}</h4> 
         <h4>${productPrice}</h4>
         </div>`
-);
+);     
         cartTotal = cartTotal + Number(productPrice.slice(1));
-        console.log(cartTotal);
+        document.querySelector('.cartTotal').textContent = '';
+        document.querySelector('.cartTotal').insertAdjacentHTML(
+        "afterbegin",
+        `<h4>Total: $${cartTotal}</h4>`
+);
     } )
 })
 
@@ -181,9 +189,7 @@ buttons.forEach((button) => {
 }
 
 addtocart()
-cart()
 
-const cart = []
 // let cartTotal = 0;
 // cart.forEach((product) => (cartTotal = cartTotal + product));
 // console.log(cartTotal);

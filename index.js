@@ -142,7 +142,7 @@ const products =[
 ];
 
 function filter(){
-    
+
 }
 
 function inject(product) {
@@ -190,6 +190,3 @@ buttons.forEach((button) => {
 
 addtocart()
 
-// let cartTotal = 0;
-// cart.forEach((product) => (cartTotal = cartTotal + product));
-// console.log(cartTotal);

@@ -3,7 +3,7 @@ const products =[
         name: "Free Stage Series- Blind Box Figure",
         price: 11.00,
         category: "Blind Boxes",
-        img: "alnst vol1 blindbox.webp",
+        img: "blindbox1.webp",
         alt: "Blind Box Figures"
     },
         {
@@ -17,7 +17,7 @@ const products =[
         name: "Mini Doll Pendant Blind Box",
         price: 9.00,
         category: "Blind Boxes",
-        img: "alnst keychain.jpg",
+        img: "alnst-keychain.jpg",
         alt: "Mini Doll Pendant Blind Box"
     },   
         {
@@ -38,21 +38,21 @@ const products =[
         name: "Baby Series- Figure Blind Box",
         price: 10.00,
         category: "Blind Boxes",
-        img: "baby box.webp",
+        img: "baby-box.webp",
         alt: "Baby Series- Figure Blind Box"
     },
         {
         name: "Blind Box Plush Doll",
         price: 10.00,
         category: "Blind Boxes",
-        img: "cutealnstbag.webp",
+        img: "cutealnstbag.jpg",
         alt: "Blind Box Plush Doll"
     },  
         {
         name: "Rabbit Series 1: Acrylic Stand",
         price: 18.00,
         category: "Rabbit Series 1",
-        img: "all bunny stand.webp",
+        img: "all-bunny-stand.webp",
         alt: "Rabbit Series 1: Acrylic Stand"
     },  
         {
@@ -80,7 +80,7 @@ const products =[
         name: "Rabbit Series 1: Rabbit Mug",
         price: 42.00,
         category: "Rabbit Series 1",
-        img: "bunny mug.webp",
+        img: "bunny-mug.webp",
         alt: "Rabbit Series 1: Rabbit Mug"
     },  
         {
@@ -94,7 +94,7 @@ const products =[
         name: "Rabbit Series 2: Blind Box",
         price: 12.00,
         category: "Rabbit Series 2",
-        img: "mizi fat bunny.webp",
+        img: "mizi-fat-bunny.webp",
         alt: "Rabbit Series 2: Blind Box"
     }, 
         {
@@ -115,7 +115,7 @@ const products =[
         name: "Rabbit Series 2: Card Set",
         price: 10.00,
         category: "Rabbit Series 2",
-        img: "bunny cards.webp",
+        img: "bunny-cards.webp",
         alt: "Rabbit Series 2: Card Set"
     },         
         {
@@ -149,6 +149,7 @@ button.addEventListener('click',() => {
     container.innerHTML = "";
     const selectedItems = products.filter( product => product.category === category || category === "All" );
     selectedItems.forEach(product => inject(product));
+    addtocart()
 });
     });
 
@@ -161,7 +162,7 @@ document.querySelector('.container').insertAdjacentHTML(
     <h5>${product.category}</h5>
     <img src = ${product.img} class = "image">
     <h4>$${product.price}</h4>
-    <button class="button" "data-title="${products.indexOf(product)}">Add to Cart</button>
+    <button class="button" data-title="${products.indexOf(product)}">Add to Cart</button>
     </div>`
   );
 }
@@ -175,10 +176,10 @@ buttons.forEach((button) => {
     button.addEventListener('click',(event) => {
         let productTitle = event.target.closest(".card").querySelector("h3").textContent; 
         let productPrice = event.target.closest(".card").querySelector("h4").textContent;
-        console.log(productTitle, productPrice) 
+        
         document.querySelector('.cart').insertAdjacentHTML(
         "afterbegin",
-        `<div class="card">
+        `<div class="cart-item">
         <h4>${productTitle}</h4> 
         <h4>${productPrice}</h4>
         </div>`

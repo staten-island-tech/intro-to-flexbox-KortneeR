@@ -12,7 +12,7 @@ html, body {
 
 .container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
     justify-content: center;
 }
 

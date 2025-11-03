@@ -141,9 +141,16 @@ const products =[
     }, 
 ];
 
-function filter(){
-
-}
+const container = document.querySelector(".container");
+const filt = document.querySelectorAll(".filter");
+    filt.forEach(button => {
+button.addEventListener('click',() => {
+    const category = button.id;
+    container.innerHTML = "";
+    const selectedItems = products.filter( product => product.category === category || category === "All" );
+    selectedItems.forEach(product => inject(product));
+});
+    });
 
 function inject(product) {
     console.log(product.img);
@@ -163,7 +170,7 @@ products.forEach(inject);
 let cartTotal = 0;
 
 function addtocart() {
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll(".button");
 buttons.forEach((button) => {
     button.addEventListener('click',(event) => {
         let productTitle = event.target.closest(".card").querySelector("h3").textContent; 
@@ -189,4 +196,3 @@ buttons.forEach((button) => {
 }
 
 addtocart()
-

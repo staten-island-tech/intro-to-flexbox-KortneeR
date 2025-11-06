@@ -188,7 +188,7 @@ buttons.forEach((button) => {
         document.querySelector('.cartTotal').textContent = '';
         document.querySelector('.cartTotal').insertAdjacentHTML(
         "afterbegin",
-        `<h4>Total: $${cartTotal}</h4>`
+        `<h4>Total: $${cartTotal.toFixed(2)}</h4>`
 );
     } )
 })
